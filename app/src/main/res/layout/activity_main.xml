@@ -23,8 +23,12 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="34dp"
         android:id="@+id/button"
+<<<<<<< HEAD
         android:background="@android:color/holo_orange_dark"
         android:drawableStart=""/>
+=======
+        android:background="@android:color/holo_green_dark"/>
+>>>>>>> 5c9fd9439dbdb97b53a57da4df28a774c3d12721
 
 
 </RelativeLayout>
