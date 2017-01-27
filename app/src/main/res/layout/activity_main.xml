@@ -23,7 +23,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="34dp"
         android:id="@+id/button"
-        android:background="@android:color/holo_orange_dark"/>
+        android:background="@android:color/holo_green_dark"/>
 
 
 </RelativeLayout>
