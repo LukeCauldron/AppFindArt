@@ -28,6 +28,8 @@ public class SongAdapter extends RecyclerView.Adapter<SongAdapter.SongViewHolder
         public void onBindViewHolder (SongAdapter.SongViewHolder holder,int position){
             Songs currentSong = dataSet.get(position);
             holder.songNameTv.setText(currentSong.getNome());
+            holder.yearTv.setText(currentSong.getYear());
+            holder.durationTv.setText(currentSong.getDuration());
 
         }
 
@@ -47,11 +49,14 @@ public class SongAdapter extends RecyclerView.Adapter<SongAdapter.SongViewHolder
 
     protected class SongViewHolder extends RecyclerView.ViewHolder {
         public TextView songNameTv;
+        public TextView yearTv;
+        public TextView durationTv;
 
         public SongViewHolder(final View v) {
             super(v);
             songNameTv = (TextView) v.findViewById(R.id.song_name);
-
+            yearTv = (TextView) v.findViewById(R.id.year);
+            durationTv = (TextView) v.findViewById(R.id.duration);
         }
     }
 }

@@ -35,13 +35,13 @@ public class second_activity extends AppCompatActivity {
         s1.setDuration("5'58''");
         s1.setYear("1975");
         Songs s2 = new Songs();
-        s1.setNome("Innuendo");
-        s1.setDuration("6'20''");
-        s1.setYear("1990");
+        s2.setNome("Innuendo");
+        s2.setDuration("6'20''");
+        s2.setYear("1990");
         Songs s3 = new Songs();
-        s1.setNome("Sarà perché ti amo");
-        s1.setDuration("3'30''");
-        s1.setYear("1921");
+        s3.setNome("The show must go on");
+        s3.setDuration("4'30''");
+        s3.setYear("1990");
 
         albumSongs.add(s1);
         albumSongs.add(s2);
