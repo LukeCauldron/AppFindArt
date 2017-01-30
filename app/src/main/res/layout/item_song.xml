@@ -33,8 +33,8 @@
             android:textStyle="italic"
             android:textSize="16sp"
             android:text="1998"
-            android:layout_marginRight="120dp"
-            android:id="@+id/age"/>
+            android:layout_marginRight="90dp"
+            android:id="@+id/year"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -55,7 +55,5 @@
             android:id="@+id/duration"/>
 
     </LinearLayout>
-
-
 
 </LinearLayout>

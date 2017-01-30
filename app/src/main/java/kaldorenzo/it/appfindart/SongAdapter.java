@@ -4,6 +4,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -11,17 +12,51 @@ import java.util.ArrayList;
  * Created by dilomede on 27/01/17.
  */
 
-public class SongAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+public class SongAdapter extends RecyclerView.Adapter<SongAdapter.SongViewHolder> {
 
-    ArrayList<Songs> dataSet;
+    private ArrayList<Songs> dataSet = new ArrayList<>();
 
-    public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType){
+        @Override
+        public SongAdapter.SongViewHolder onCreateViewHolder(ViewGroup parent, int viewType){
+            View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_song, parent, false);
+            SongViewHolder holder = new SongViewHolder(v);
 
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_song,parent,false);
-        SongViewHolder holder = new SongViewHolder(v);
-        return holder;
+            return holder;
+        }
 
+        @Override
+        public void onBindViewHolder (SongAdapter.SongViewHolder holder,int position){
+            Songs currentSong = dataSet.get(position);
+            holder.songNameTv.setText(currentSong.getNome());
+            holder.yearTv.setText(currentSong.getYear());
+            holder.durationTv.setText(currentSong.getDuration());
+
+        }
+
+
+    public void setDataSet(ArrayList<Songs> songs)
+
+    {
+        dataSet = songs;
+        notifyDataSetChanged();
 
     }
 
+    @Override
+    public int getItemCount() {
+        return dataSet.size();
+    }
+
+    protected class SongViewHolder extends RecyclerView.ViewHolder {
+        public TextView songNameTv;
+        public TextView yearTv;
+        public TextView durationTv;
+
+        public SongViewHolder(final View v) {
+            super(v);
+            songNameTv = (TextView) v.findViewById(R.id.song_name);
+            yearTv = (TextView) v.findViewById(R.id.year);
+            durationTv = (TextView) v.findViewById(R.id.duration);
+        }
+    }
 }
