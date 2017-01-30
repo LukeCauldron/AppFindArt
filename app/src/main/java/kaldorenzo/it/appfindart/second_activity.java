@@ -1,5 +1,6 @@
 package kaldorenzo.it.appfindart;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -7,7 +8,7 @@ import android.support.v7.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class second_activity extends AppCompatActivity {
+public class second_activity extends Activity {
 
     RecyclerView songRecyclerView;
     RecyclerView.LayoutManager layoutManager;
