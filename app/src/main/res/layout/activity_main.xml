@@ -22,8 +22,18 @@
         android:layout_below="@+id/img"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="34dp"
-        android:id="@+id/button"
+        android:id="@+id/search"
         android:background="@android:color/holo_orange_dark"
         android:drawableStart="@drawable/button"/>
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="9dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@id/img"
+        android:id="@+id/button"
+        android:background="@android:color/black"
+        android:drawableStart="@drawable/menu"/>
 
 </RelativeLayout>
