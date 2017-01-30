@@ -2,15 +2,11 @@ package kaldorenzo.it.appfindart;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-<<<<<<< HEAD
-import android.widget.*;
-=======
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
->>>>>>> e83c58a402de82c557137ec47c0eb6fb39df4932
+
 
 public class MainActivity extends Activity {
 
