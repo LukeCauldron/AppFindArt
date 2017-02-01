@@ -22,6 +22,11 @@ import android.os.Bundle;
             }
         }
 
+        protected void onStart(){
+            super.onStart();
+
+        }
+
     }
 
 
