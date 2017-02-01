@@ -12,14 +12,22 @@ public class MainActivity extends Activity {
 
     Activity activity = this;
     private ImageView miaImmagine;
+    Button tastoTrackList;
     Button tastoCentrale;
 
-View.OnClickListener changeBtnListener = new View.OnClickListener() {
+View.OnClickListener changeBtnListener2nd = new View.OnClickListener() {
     public void onClick(View view) {
         Intent intent = new Intent(activity, Second_activity.class);
         startActivity(intent);
     }
 };
+
+    View.OnClickListener changeBtnListenerCAM = new View.OnClickListener() {
+        public void onClick(View view) {
+            Intent intent = new Intent(activity, CameraActivity.class);
+            startActivity(intent);
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +36,10 @@ View.OnClickListener changeBtnListener = new View.OnClickListener() {
         miaImmagine = (ImageView) findViewById(R.id.img);
         //miaImmagine.setImageResource(R.drawable.img);
 
-        tastoCentrale = (Button)findViewById(R.id.button);
-        tastoCentrale.setOnClickListener(changeBtnListener);
+        tastoTrackList = (Button)findViewById(R.id.button);
+        tastoTrackList.setOnClickListener(changeBtnListener2nd);
+
+        tastoCentrale = (Button)findViewById(R.id.search);
+        tastoCentrale.setOnClickListener(changeBtnListenerCAM);
     }
 }
