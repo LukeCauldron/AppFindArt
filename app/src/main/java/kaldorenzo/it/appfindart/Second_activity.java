@@ -8,7 +8,7 @@ import android.support.v7.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class second_activity extends Activity {
+public class Second_activity extends Activity {
 
     RecyclerView songRecyclerView;
     RecyclerView.LayoutManager layoutManager;

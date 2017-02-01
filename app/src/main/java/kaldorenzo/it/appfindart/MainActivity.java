@@ -16,7 +16,7 @@ public class MainActivity extends Activity {
 
 View.OnClickListener changeBtnListener = new View.OnClickListener() {
     public void onClick(View view) {
-        Intent intent = new Intent(activity, second_activity.class);
+        Intent intent = new Intent(activity, Second_activity.class);
         startActivity(intent);
     }
 };
