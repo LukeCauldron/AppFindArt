@@ -15,7 +15,7 @@ public class MainActivity extends Activity {
     Button tastoTrackList;
     Button tastoCentrale;
 
-View.OnClickListener changeBtnListener2nd = new View.OnClickListener() {
+    View.OnClickListener changeBtnListener2nd = new View.OnClickListener() {
     public void onClick(View view) {
         Intent intent = new Intent(activity, SecondActivity.class);
         startActivity(intent);
@@ -24,8 +24,7 @@ View.OnClickListener changeBtnListener2nd = new View.OnClickListener() {
 
     View.OnClickListener changeBtnListenerCAM = new View.OnClickListener() {
         public void onClick(View view) {
-
-            Intent intent = new Intent(activity, CameraActivity.class);
+            Intent intent = new Intent(activity, ThirdActivity.class);
             startActivity(intent);
         }
     };
@@ -41,6 +40,13 @@ View.OnClickListener changeBtnListener2nd = new View.OnClickListener() {
         tastoTrackList.setOnClickListener(changeBtnListener2nd);
 
         tastoCentrale = (Button)findViewById(R.id.search);
+
         tastoCentrale.setOnClickListener(changeBtnListenerCAM);
     }
+
+
+
+
+
+
 }
