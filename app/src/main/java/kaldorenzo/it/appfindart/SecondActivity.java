@@ -1,14 +1,13 @@
 package kaldorenzo.it.appfindart;
 
 import android.app.Activity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class Second_activity extends Activity {
+public class SecondActivity extends Activity {
 
     RecyclerView songRecyclerView;
     RecyclerView.LayoutManager layoutManager;
@@ -17,7 +16,7 @@ public class Second_activity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_second_activity);
+        setContentView(R.layout.activity_second);
 
         songRecyclerView = (RecyclerView)findViewById(R.id.recycler_view);
         layoutManager = new LinearLayoutManager(this);
