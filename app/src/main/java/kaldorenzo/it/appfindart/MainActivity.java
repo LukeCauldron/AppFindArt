@@ -24,6 +24,7 @@ View.OnClickListener changeBtnListener2nd = new View.OnClickListener() {
 
     View.OnClickListener changeBtnListenerCAM = new View.OnClickListener() {
         public void onClick(View view) {
+
             Intent intent = new Intent(activity, CameraActivity.class);
             startActivity(intent);
         }
@@ -34,7 +35,7 @@ View.OnClickListener changeBtnListener2nd = new View.OnClickListener() {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         miaImmagine = (ImageView) findViewById(R.id.img);
-        //miaImmagine.setImageResource(R.drawable.img);
+        miaImmagine.setImageResource(R.drawable.img);
 
         tastoTrackList = (Button)findViewById(R.id.button);
         tastoTrackList.setOnClickListener(changeBtnListener2nd);

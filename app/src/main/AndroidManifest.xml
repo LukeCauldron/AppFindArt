@@ -19,7 +19,12 @@
 
         <activity android:name=".ThirdActivity"></activity>
 
-        <activity android:name=".CameraActivity"></activity>
+        <activity android:name=".CameraActivity">
+            <intent-filter>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".Camera2Fragment"></activity>
         <activity android:name=".AutoFitTextureView"></activity>
     </application>
