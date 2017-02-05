@@ -17,14 +17,14 @@ public class MainActivity extends Activity {
 
     View.OnClickListener changeBtnListener2nd = new View.OnClickListener() {
     public void onClick(View view) {
-        Intent intent = new Intent(activity, SecondActivity.class);
+        Intent intent = new Intent(activity, kaldorenzo.it.appfindart.SecondActivity.class);
         startActivity(intent);
     }
 };
 
     View.OnClickListener changeBtnListenerCAM = new View.OnClickListener() {
         public void onClick(View view) {
-            Intent intent = new Intent(activity, ThirdActivity.class);
+            Intent intent = new Intent(activity, kaldorenzo.it.appfindart.ThirdActivity.class);
             startActivity(intent);
         }
     };

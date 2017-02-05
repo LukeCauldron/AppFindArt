@@ -11,16 +11,20 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import java.io.Serializable;
 
 
 /**
  * Created by luke on 1/30/17.
  */
 
-public class ThirdActivity extends Activity {
+// la Third si occupa della fotocamera dell'app default di android
+
+public class ThirdActivity extends Activity /*implements Serializable*/ {
 
     private ImageView imageHolder;
     private final int requestCode = 20;
+    Intent intent = new Intent(this, kaldorenzo.it.appfindart.FourthActivity.class);
 
 
     @Override
@@ -36,7 +40,10 @@ public class ThirdActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Intent photoCaptureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                //photoCaptureIntent contiene la foto scattata
                 startActivityForResult(photoCaptureIntent, requestCode);
+                //startActivityForResult starta l'activity mandando la foto e il requestcode, poi
+                // utilizzati nell' onActivityResult
             }
         });
         //---
@@ -51,6 +58,10 @@ public class ThirdActivity extends Activity {
         if(this.requestCode == requestCode && resultCode == RESULT_OK){
             Bitmap bitmap = (Bitmap)data.getExtras().get("data");
             imageHolder.setImageBitmap(bitmap);
+            //prove
+            int imghldr_url = imageHolder.getId();
+            intent.putExtra("EXTRA_IMAGEVIEW_URL", imghldr_url);
+            startActivity(intent);
         }
     }
 

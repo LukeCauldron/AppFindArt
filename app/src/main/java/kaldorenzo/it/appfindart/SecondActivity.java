@@ -4,8 +4,9 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-
 import java.util.ArrayList;
+
+// la Second mostra la RecyclerView delle canzoni , al momento una prova, poi dal DB dopo la comparazione
 
 public class SecondActivity extends Activity {
 
