@@ -20,6 +20,9 @@ import java.io.Serializable;
 
 // la Third si occupa della fotocamera dell'app default di android
 
+    // da modificare l' activity_third.xml e far passare direttamente alla fotocamera
+    //  ( contenuto onClick )
+
 public class ThirdActivity extends Activity /*implements Serializable*/ {
 
     private ImageView imageHolder;

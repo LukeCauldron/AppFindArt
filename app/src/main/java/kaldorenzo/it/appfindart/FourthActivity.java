@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+//static {System.loadLibrary("opencv_java3");}        da usare nell'Activity di comparazione imgs
+
 /**
  * Created by luke on 2/4/17.
  */
